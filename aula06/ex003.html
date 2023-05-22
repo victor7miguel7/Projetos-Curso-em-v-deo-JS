@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+           background-color: rgb(96, 230, 230); 
+           color: rgb(98, 10, 240);
+           font: normal 20pt Arial;
+        }
+        h1{
+            color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>teste de paragáfo</p>
+    <script>
+        //primeiro jeito
+        /*var n1 = Number.parseInt(prompt('Digite um número: '));
+        var n2 = Number.parseInt(prompt('Digite um novo número: '));*/
+        //segundo jeito
+        var n1 = Number(prompt('Digite um número: '));
+        var n2 = Number(prompt('Digite um novo número: '));
+        var soma = n1 + n2
+        //primeiro jeito
+        //alert('A soma dos valores é: ' + soma);
+        //segundo jeito
+        alert(`A soma dos valores ${n1} e ${n2} é igual ${soma} `);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Nacionalidade</title>
+</head>
+<body>
+   <h1>Teste para saber se você é brasileiro</h1>
+   Digite o país em que você nasceu <input type="text" name="" id="txt1">
+   <input type="button" value="OK" onclick="descobrir()"> 
+   <div id="res"></div>
+
+   <script>
+        function descobrir(){
+            var txtp = document.querySelector('input#txt1')//pega a string do input do html para uma variavel no js
+            var res = document.querySelector('div#res')//pega a div do input do html para uma variavel no js
+            var paisdig = txtp.value//salva o valor digitado pelo usuario
+            res.innerHTML = `<p>Você nasceu no país <strong>${paisdig}</strong></p>`
+            if(paisdig.toLowerCase() === 'brasil'){
+                res.innerHTML += `<p>Você é <strong>BRASILEIRO</strong>!</p>`
+            } else{
+            res.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong>!</p>`
+            }       
+        }
+   </script>
+</body>
+</html>
